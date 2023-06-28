@@ -3,11 +3,11 @@ import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 import { useLocation } from "react-router-dom";
-import useTestContext from "../hooks/useTestContext";
+import useTestContext from "../../hooks/useTestContext";
 
 const navigation = [
-  { name: "Users", href: "/" },
-  { name: "Cars", href: "/cars" },
+  { name: "Usuarios", href: "/" },
+  { name: "Coches", href: "/cars" },
 ];
 
 function classNames(...classes: any[]) {
@@ -45,8 +45,8 @@ export default function Navbar() {
                       to={item.href}
                       className={classNames(
                         item.href === route.pathname
-                          ? "border-b-2 border-gray-900 "
-                          : "hover:border-b-2 border-gray-900 ",
+                          ? "border-b-2 border-[#A7B1C5] "
+                          : "hover:border-b-2 border-[#A7B1C5] ",
                         "px-3 py-2 text-sm font-medium text-gray-700"
                       )}
                     >
@@ -59,7 +59,7 @@ export default function Navbar() {
             <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
               <button
                 onClick={() => resetData()}
-                className="rounded-md px-3 py-2 text-sm text-gray-200 bg-red-500 "
+                className="rounded-md px-3 py-2 text-sm text-gray-100 bg-red-600 hover:bg-red-700 "
               >
                 reset
               </button>
@@ -74,7 +74,7 @@ export default function Navbar() {
                   to={item.href}
                   className={classNames(
                     item.href === route.pathname
-                      ? "bg-gray-900 text-white"
+                      ? "bg-[#A7B1C5] text-white"
                       : null,
                     "block rounded-md px-3 py-2 text-base font-medium"
                   )}

@@ -7,6 +7,7 @@ import Home from './Pages/Home.tsx';
 import Cars from './Pages/Cars.tsx';
 
 import './global.css'
+import 'react-toastify/dist/ReactToastify.css';
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
