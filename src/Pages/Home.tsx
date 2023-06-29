@@ -45,7 +45,6 @@ export default function Home() {
                 <Card className="grid gap-y-2 text-gray-900" key={user.id}>
                   <h1 className="font-bold">{user.name}</h1>
                   <p>{user.email}</p>
-
                   <div className="flex flex-wrap">{favoriteCars}</div>
                 </Card>
               );
