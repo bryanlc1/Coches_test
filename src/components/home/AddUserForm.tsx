@@ -85,7 +85,7 @@ export default function AddUserForm({
                 {cars.map((car) => {
                     const selectCarsIsFull = selectCars.includes(car.id);
                   return (
-                    <div className="relative flex m-2 gap-x-2">
+                    <div key={car.id} className="relative flex m-2 gap-x-2">
                       <div className="flex h-6 items-center">
                         <input
                           value={car.id}

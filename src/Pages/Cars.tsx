@@ -5,7 +5,7 @@ import Modal from "../components/commons/Modal";
 import useTestContext from "../hooks/useTestContext";
 import AddCarForm from "../components/Cars/AddCarForm";
 
-import { DeleteFavoriteCar } from "../services/CartsServices";
+import { DeleteFavoriteCar } from "../services/CarsServices";
 
 import {
   PlusIcon,
